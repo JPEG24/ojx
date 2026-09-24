@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"atc/bin/util"
+	"ojx/bin/util"
 )
 
 func Run(args []string) int {
@@ -17,9 +17,9 @@ func Run(args []string) int {
 			return status
 		}
 	}
-	if config.Program.Run == "" {
+	if config.Run == "" {
 		fmt.Fprintln(os.Stderr, "Run command is not configured")
 		return 1
 	}
-	return util.RunShellCommand(config.Program.Run)
+	return util.RunShellCommand(config.Run)
 }

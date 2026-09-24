@@ -1,6 +1,6 @@
 package commands
 
-import "atc/bin/util"
+import "ojx/bin/util"
 
 func Compile() int {
 	if err := util.CompileProgram(); err != nil {

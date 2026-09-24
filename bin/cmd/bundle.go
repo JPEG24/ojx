@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/exec"
 
-	lib "atc/bin/util"
+	lib "ojx/bin/util"
 )
 
 func Bundle(args []string) int {

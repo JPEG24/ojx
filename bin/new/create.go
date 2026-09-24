@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"atc/bin/util"
+	"ojx/bin/util"
 )
 
 func CreateContest(contest *util.Contest) error {
@@ -31,7 +31,7 @@ func WriteContestJSON(contest *util.Contest) error {
 	if err != nil {
 		return fmt.Errorf("failed to marshal contest data: %w", err)
 	}
-	return os.WriteFile("contest.atc.json", data, 0644)
+	return os.WriteFile("contest.ojx.json", data, 0644)
 }
 
 func SetupTasks(contest *util.Contest) error {

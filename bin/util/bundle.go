@@ -14,9 +14,9 @@ func Bundle(outputFile string, acl bool) ([]byte, error) {
 
 	var command *string
 	if acl {
-		command = config.Program.BundleACL
+		command = config.BundleACL
 	} else {
-		command = config.Program.Bundle
+		command = config.Bundle
 	}
 
 	if command == nil {

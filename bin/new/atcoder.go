@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"atc/bin/util"
+	"ojx/bin/util"
 
 	"github.com/PuerkitoBio/goquery"
 )

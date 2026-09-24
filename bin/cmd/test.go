@@ -1,8 +1,8 @@
 package commands
 
 import (
-	lib "atc/bin/util"
 	"fmt"
+	lib "ojx/bin/util"
 	"os"
 	"strconv"
 )
@@ -31,7 +31,7 @@ func Test(args []string) int {
 			extraArgs = append(extraArgs, arg)
 		}
 	}
-	baseArgs := []string{"t", "--command", config.Program.Run, "--ignore-spaces-and-newlines"}
+	baseArgs := []string{"t", "--command", config.Run, "--ignore-spaces-and-newlines"}
 	task, taskErr := lib.FindCurrentTask()
 	if taskErr != nil {
 		return runCommand("oj", append(baseArgs, extraArgs...)...)

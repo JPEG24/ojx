@@ -11,7 +11,7 @@ func CompileProgram() error {
 	if err != nil {
 		return fmt.Errorf("Error loading config: %v", err)
 	}
-	command := config.Program.Compile
+	command := config.Compile
 	if command == nil {
 		return nil
 	}

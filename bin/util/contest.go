@@ -12,7 +12,7 @@ func FindContestJson() (*string, error) {
 	}
 
 	for {
-		candidate := filepath.Join(dir, "contest.atc.json")
+		candidate := filepath.Join(dir, "contest.ojx.json")
 		if _, err := os.Stat(candidate); err == nil {
 			return &candidate, nil
 		}

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"atc/bin/util"
+	"ojx/bin/util"
 )
 
 func Submit(args []string) int {
@@ -27,14 +27,14 @@ func Submit(args []string) int {
 		return 1
 	}
 
-	outputFile := ".atc_bundle.cpp"
+	outputFile := ".ojx_bundle.cpp"
 	_, err = util.Bundle(outputFile, contains(args, "-a"))
 	if err != nil {
 		return fail(err)
 	}
 	task, err := util.FindCurrentTask()
 	if err != nil {
-		fmt.Fprintln(os.Stderr, "contest.atc.json not found")
+		fmt.Fprintln(os.Stderr, "contest.ojx.json not found")
 		return 1
 	}
 	extraArgs := make([]string, 0, len(args))

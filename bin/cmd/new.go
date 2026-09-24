@@ -1,15 +1,15 @@
 package commands
 
 import (
-	contestlib "atc/bin/new"
-	"atc/bin/util"
 	"fmt"
+	contestlib "ojx/bin/new"
+	"ojx/bin/util"
 	"os"
 )
 
 func New(args []string) int {
 	if len(args) != 2 {
-		fmt.Fprintln(os.Stderr, "Usage: atc new <platform> <contestID>")
+		fmt.Fprintln(os.Stderr, "Usage: ojx new <platform> <contestID>")
 		return 1
 	}
 

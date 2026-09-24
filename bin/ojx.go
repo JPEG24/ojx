@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	commands "atc/bin/cmd"
+	commands "ojx/bin/cmd"
 )
 
 func main() {
@@ -32,8 +32,10 @@ func main() {
 		status = commands.Bundle(args[1:])
 	case "submit", "s":
 		status = commands.Submit(args[1:])
+	case "mode", "m":
+		status = commands.Mode(args[1:])
 	case "config-dir":
-		fmt.Println(filepath.Join(os.Getenv("HOME"), ".config", "atc"))
+		fmt.Println(filepath.Join(os.Getenv("HOME"), ".config", "ojx"))
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown command: %s\n", args[0])
 		status = 1
