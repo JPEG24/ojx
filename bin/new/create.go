@@ -70,9 +70,6 @@ func CopyTemplate(src string, dst string) error {
 		if entry.IsDir() && entry.Name() == "test" {
 			return fmt.Errorf("Don't include the test directory in the template directory")
 		}
-		if !entry.IsDir() && entry.Name() == "template.json" {
-			continue // Skip template.json
-		}
 		srcPath := filepath.Join(src, entry.Name())
 		dstPath := filepath.Join(dst, entry.Name())
 		if entry.IsDir() {
