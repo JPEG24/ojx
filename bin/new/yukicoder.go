@@ -13,7 +13,7 @@ import (
 func NewYukicoder(contestID string) (*util.Contest, error) {
 	url := fmt.Sprintf("https://yukicoder.me/contests/%s", contestID)
 
-	resp, err := NewRequest("GET", url)
+	resp, err := NewRequest(url)
 	if err != nil {
 		return nil, err
 	}
@@ -60,7 +60,7 @@ func NewYukicoder(contestID string) (*util.Contest, error) {
 }
 
 func LoadYukicoderTask(taskID, taskURL string) (util.Task, error) {
-	resp, err := NewRequest("GET", fmt.Sprintf("https://yukicoder.me%s", taskURL))
+	resp, err := NewRequest(fmt.Sprintf("https://yukicoder.me%s", taskURL))
 	if err != nil {
 		return util.Task{}, err
 	}

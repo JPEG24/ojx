@@ -13,7 +13,7 @@ import (
 func NewCodeforces(contestID string) (*util.Contest, error) {
 	url := fmt.Sprintf("https://codeforces.com/contest/%s", contestID)
 
-	resp, err := NewRequest("GET", url)
+	resp, err := NewRequest(url)
 	if err != nil {
 		return nil, err
 	}

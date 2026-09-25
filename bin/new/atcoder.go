@@ -13,7 +13,14 @@ import (
 func NewAtCoder(contestID string) (*util.Contest, error) {
 	url := fmt.Sprintf("https://atcoder.jp/contests/%s/tasks", contestID)
 
-	resp, err := NewRequest("GET", url)
+	config, err := util.LoadConfig()
+	if err != nil {
+		return nil, err
+	}
+
+	session := config.Cookie.AtCoder
+
+	resp, err := NewAtCoderRequest(url, session)
 	if err != nil {
 		return nil, err
 	}

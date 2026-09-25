@@ -20,6 +20,8 @@ type Config struct {
 	BundleACL   *string           `json:"bundle_acl"`
 	RandomTest  RandomTestConfig  `json:"random_test"`
 	Interactive InteractiveConfig `json:"interactive"`
+
+	Cookie CookieConfig `json:"cookie"`
 }
 
 //TODO Integrate random test and interactive commands internally.
@@ -35,6 +37,10 @@ type InteractiveConfig struct {
 	Judge   string  `json:"judge"`
 	Compile *string `json:"compile"`
 	Run     string  `json:"run"`
+}
+
+type CookieConfig struct {
+	AtCoder string `json:"atcoder"`
 }
 
 func GetMode() (string, error) {
