@@ -1,0 +1,54 @@
+{
+  "Platform": "codeforces",
+  "ContestID": "2266",
+  "Tasks": [
+    {
+      "TaskID": "a",
+      "URL": "https://codeforces.com/contest/2266/problem/A",
+      "TimeLimit": 1,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "b",
+      "URL": "https://codeforces.com/contest/2266/problem/B",
+      "TimeLimit": 1,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "c",
+      "URL": "https://codeforces.com/contest/2266/problem/C",
+      "TimeLimit": 2,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "d",
+      "URL": "https://codeforces.com/contest/2266/problem/D",
+      "TimeLimit": 2,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "e",
+      "URL": "https://codeforces.com/contest/2266/problem/E",
+      "TimeLimit": 2,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "f",
+      "URL": "https://codeforces.com/contest/2266/problem/F",
+      "TimeLimit": 2,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "g",
+      "URL": "https://codeforces.com/contest/2266/problem/G",
+      "TimeLimit": 3,
+      "MemoryLimit": 256
+    },
+    {
+      "TaskID": "h",
+      "URL": "https://codeforces.com/contest/2266/problem/H",
+      "TimeLimit": 3,
+      "MemoryLimit": 256
+    }
+  ]
+}

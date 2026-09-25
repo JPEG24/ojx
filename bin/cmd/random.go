@@ -33,7 +33,7 @@ func RandomTest(skipCompile bool) int {
 }
 
 func copyTemplate(file string) int {
-	src := util.ResolveConfigPath(filepath.Join("modes", file))
+	src := util.ResolveConfigPath("modes", file)
 	dst := filepath.Base(src)
 	if _, err := os.Stat(src); err != nil {
 		fmt.Fprintf(os.Stderr, "Template not found: %s\n", src)
@@ -55,7 +55,7 @@ func copyTemplate(file string) int {
 }
 
 func runConfiguredScript(file string) int {
-	path := util.ResolveConfigPath(file)
+	path := util.ResolveConfigPath("modes", file)
 	if _, err := os.Stat(path); err != nil {
 		fmt.Fprintf(os.Stderr, "Run script not found: %s\n", path)
 		return 1

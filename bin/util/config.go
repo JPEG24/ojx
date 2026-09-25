@@ -38,7 +38,7 @@ type InteractiveConfig struct {
 }
 
 func GetMode() (string, error) {
-	configPath := ResolveConfigPath("config.json")
+	configPath := ResolveConfigPath("", "config.json")
 
 	if _, err := os.Stat(configPath); os.IsNotExist(err) {
 		return "", fmt.Errorf("Config file not found at %s", configPath)
@@ -62,7 +62,7 @@ func LoadConfig() (Config, error) {
 	if err != nil {
 		return Config{}, err
 	}
-	configPath := ResolveConfigPath(filepath.Join("modes", lang+".json"))
+	configPath := ResolveConfigPath("modes", lang+".json")
 
 	if _, err := os.Stat(configPath); os.IsNotExist(err) {
 		return Config{}, fmt.Errorf("Config file not found at %s", configPath)
@@ -81,11 +81,11 @@ func LoadConfig() (Config, error) {
 	return config, nil
 }
 
-func ResolveConfigPath(path string) string {
+func ResolveConfigPath(base, path string) string {
 	if filepath.IsAbs(path) {
-		return path
+		return filepath.Join(base, path)
 	}
 
 	homeDir := os.Getenv("HOME")
-	return filepath.Join(homeDir, ".config", "ojx", path)
+	return filepath.Join(homeDir, ".config", "ojx", base, path)
 }

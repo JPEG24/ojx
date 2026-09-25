@@ -1,0 +1,150 @@
+{
+  "Platform": "yukicoder",
+  "ContestID": "615",
+  "Tasks": [
+    {
+      "TaskID": "a",
+      "URL": "https://yukicoder.me/problems/no/3721",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "b",
+      "URL": "https://yukicoder.me/problems/no/3722",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "c",
+      "URL": "https://yukicoder.me/problems/no/3723",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "d",
+      "URL": "https://yukicoder.me/problems/no/3724",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "e",
+      "URL": "https://yukicoder.me/problems/no/3725",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "f",
+      "URL": "https://yukicoder.me/problems/no/3726",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "g",
+      "URL": "https://yukicoder.me/problems/no/3727",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "h",
+      "URL": "https://yukicoder.me/problems/no/3728",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "i",
+      "URL": "https://yukicoder.me/problems/no/3729",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "j",
+      "URL": "https://yukicoder.me/problems/no/3730",
+      "TimeLimit": 2.5,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "k",
+      "URL": "https://yukicoder.me/problems/no/3731",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "l",
+      "URL": "https://yukicoder.me/problems/no/3732",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "m",
+      "URL": "https://yukicoder.me/problems/no/3733",
+      "TimeLimit": 2,
+      "MemoryLimit": 512
+    },
+    {
+      "TaskID": "n",
+      "URL": "https://yukicoder.me/problems/no/3734",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "o",
+      "URL": "https://yukicoder.me/problems/no/3735",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "p",
+      "URL": "https://yukicoder.me/problems/no/3736",
+      "TimeLimit": 3,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "q",
+      "URL": "https://yukicoder.me/problems/no/3737",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "r",
+      "URL": "https://yukicoder.me/problems/no/3738",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "s",
+      "URL": "https://yukicoder.me/problems/no/3739",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "t",
+      "URL": "https://yukicoder.me/problems/no/3740",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "u",
+      "URL": "https://yukicoder.me/problems/no/3741",
+      "TimeLimit": 10,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "v",
+      "URL": "https://yukicoder.me/problems/no/3742",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "w",
+      "URL": "https://yukicoder.me/problems/no/3743",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "x",
+      "URL": "https://yukicoder.me/problems/no/3744",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    }
+  ]
+}

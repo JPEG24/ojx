@@ -1,0 +1,48 @@
+{
+  "Platform": "atcoder",
+  "ContestID": "abc476",
+  "Tasks": [
+    {
+      "TaskID": "a",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_a",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "b",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_b",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "c",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_c",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "d",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_d",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "e",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_e",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "f",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_f",
+      "TimeLimit": 3,
+      "MemoryLimit": 2048
+    },
+    {
+      "TaskID": "g",
+      "URL": "https://atcoder.jp/contests/abc476/tasks/abc476_g",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    }
+  ]
+}

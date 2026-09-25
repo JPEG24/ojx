@@ -25,7 +25,7 @@ func Mode(args []string) int {
 	}
 
 	newMode := args[0]
-	configPath := util.ResolveConfigPath("config.json")
+	configPath := util.ResolveConfigPath("", "config.json")
 	data, err := json.MarshalIndent(util.ModeConfig{Mode: newMode}, "", "  ")
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "mode: error marshaling config:", err)

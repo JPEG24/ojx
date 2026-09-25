@@ -39,7 +39,7 @@ func SetupTasks(contest *util.Contest) error {
 	if err != nil {
 		return fmt.Errorf("failed to load config: %w", err)
 	}
-	templatePath := util.ResolveConfigPath(config.Template)
+	templatePath := util.ResolveConfigPath("modes", config.Template)
 	for _, task := range contest.Tasks {
 		if err := os.MkdirAll(task.TaskID, 0755); err != nil {
 			return fmt.Errorf("failed to create task directory: %w", err)

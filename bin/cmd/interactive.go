@@ -17,7 +17,7 @@ func InteractiveInit() int {
 }
 
 func copyInteractiveTemplate(file string) int {
-	src := util.ResolveConfigPath(filepath.Join("modes", file))
+	src := util.ResolveConfigPath("modes", file)
 	dst := filepath.Base(src)
 	if _, err := os.Stat(src); err != nil {
 		fmt.Fprintf(os.Stderr, "Template not found: %s\n", src)
