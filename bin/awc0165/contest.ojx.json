@@ -1,0 +1,36 @@
+{
+  "Platform": "atcoder",
+  "ContestID": "awc0165",
+  "Tasks": [
+    {
+      "TaskID": "a",
+      "URL": "https://atcoder.jp/contests/awc0165/tasks/awc0165_a",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "b",
+      "URL": "https://atcoder.jp/contests/awc0165/tasks/awc0165_b",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "c",
+      "URL": "https://atcoder.jp/contests/awc0165/tasks/awc0165_c",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "d",
+      "URL": "https://atcoder.jp/contests/awc0165/tasks/awc0165_d",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    },
+    {
+      "TaskID": "e",
+      "URL": "https://atcoder.jp/contests/awc0165/tasks/awc0165_e",
+      "TimeLimit": 2,
+      "MemoryLimit": 1024
+    }
+  ]
+}

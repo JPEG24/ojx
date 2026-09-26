@@ -12,12 +12,13 @@ type ModeConfig struct {
 }
 
 type Config struct {
-	Template string  `json:"template"`
-	Compile  *string `json:"compile"`
-	Run      string  `json:"run"`
+	Template   string  `json:"template"`
+	SubmitFile string  `json:"submit"`
+	Compile    *string `json:"compile"`
+	Run        string  `json:"run"`
 
-	Bundle      *string           `json:"bundle"`
-	BundleACL   *string           `json:"bundle_acl"`
+	// Bundle      *string           `json:"bundle"`
+	// BundleACL   *string           `json:"bundle_acl"`
 	RandomTest  RandomTestConfig  `json:"random_test"`
 	Interactive InteractiveConfig `json:"interactive"`
 
@@ -64,11 +65,11 @@ func GetMode() (string, error) {
 }
 
 func LoadConfig() (Config, error) {
-	lang, err := GetMode()
+	mode, err := GetMode()
 	if err != nil {
 		return Config{}, err
 	}
-	configPath := ResolveConfigPath("modes", lang+".json")
+	configPath := ResolveConfigPath("modes", mode+".json")
 
 	if _, err := os.Stat(configPath); os.IsNotExist(err) {
 		return Config{}, fmt.Errorf("Config file not found at %s", configPath)

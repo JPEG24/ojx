@@ -27,8 +27,13 @@ func Submit(args []string) int {
 		return 1
 	}
 
-	outputFile := ".ojx_bundle.cpp"
-	_, err = util.Bundle(outputFile, contains(args, "-a"))
+	// outputFile := ".ojx_submit.cpp"
+	// _, err = util.Bundle(outputFile, contains(args, "-a"))
+	// if err != nil {
+	// 	return fail(err)
+	// }
+
+	config, err := util.LoadConfig()
 	if err != nil {
 		return fail(err)
 	}
@@ -43,5 +48,5 @@ func Submit(args []string) int {
 			extraArgs = append(extraArgs, arg)
 		}
 	}
-	return runCommand("oj", append([]string{"submit", task.URL, outputFile, "--yes"}, extraArgs...)...)
+	return runCommand("oj", append([]string{"submit", task.URL, config.SubmitFile, "--yes"}, extraArgs...)...)
 }

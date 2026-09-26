@@ -54,20 +54,20 @@ func SetupTasks(contest *util.Contest) error {
 		}
 
 		// Create template files for the task
-		if err := CopyTemplate(templatePath, task.TaskID); err != nil {
+		if err := CopyTemplate(templatePath, task.TaskID, 0); err != nil {
 			return fmt.Errorf("failed to copy template for task %s: %w", task.TaskID, err)
 		}
 	}
 	return nil
 }
 
-func CopyTemplate(src string, dst string) error {
+func CopyTemplate(src string, dst string, depth int) error {
 	entries, err := os.ReadDir(src)
 	if err != nil {
 		return fmt.Errorf("failed to read template directory: %w", err)
 	}
 	for _, entry := range entries {
-		if entry.IsDir() && entry.Name() == "test" {
+		if entry.IsDir() && entry.Name() == "test" && depth == 0 {
 			return fmt.Errorf("Don't include the test directory in the template directory")
 		}
 		srcPath := filepath.Join(src, entry.Name())
@@ -76,7 +76,7 @@ func CopyTemplate(src string, dst string) error {
 			if err := os.MkdirAll(dstPath, 0755); err != nil {
 				return fmt.Errorf("failed to create directory %s: %w", dstPath, err)
 			}
-			if err := CopyTemplate(srcPath, dstPath); err != nil {
+			if err := CopyTemplate(srcPath, dstPath, depth|1); err != nil {
 				return err
 			}
 		} else {

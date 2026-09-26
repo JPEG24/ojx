@@ -28,8 +28,8 @@ func main() {
 		status = commands.Run(args[1:])
 	case "test", "t":
 		status = commands.Test(args[1:])
-	case "bundle", "b":
-		status = commands.Bundle(args[1:])
+	// case "bundle", "b":
+	// 	status = commands.Bundle(args[1:])
 	case "submit", "s":
 		status = commands.Submit(args[1:])
 	case "mode", "m":

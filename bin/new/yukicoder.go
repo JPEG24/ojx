@@ -6,6 +6,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/PuerkitoBio/goquery"
 )
@@ -29,6 +30,8 @@ func NewYukicoder(contestID string) (*util.Contest, error) {
 		ContestID: contestID,
 	}
 
+	start := time.Now()
+
 	doc.Find("table tbody tr").Each(func(_ int, tr *goquery.Selection) {
 		cols := tr.Find("td")
 
@@ -48,6 +51,8 @@ func NewYukicoder(contestID string) (*util.Contest, error) {
 		}
 
 		contest.Tasks = append(contest.Tasks, task)
+
+		println(fmt.Sprintf("Loaded task %s in %v", taskID, time.Since(start)))
 	})
 
 	if len(contest.Tasks) == 0 {
